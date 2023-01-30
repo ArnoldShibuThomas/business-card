@@ -1,0 +1,60 @@
+body {
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile{
+    width: 150px;
+}
+
+.card{
+    padding: 20px;
+    display: flex;
+
+    /*This will space the elements in the card*/
+    justify-content: space-around;
+
+    /*The content is centered*/
+    width: 400px;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0px auto;
+
+    text-align: center;
+
+    color: #ffd60a;
+    background: #003566;
+    
+}
+
+/*This is a utnility class*/
+.border{
+    border: 7px solid #001d3d;
+    border-bottom: 7px solid #ffc300;
+    border-style: solid;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 5px rgba(179, 7, 7, 0.8);
+}
+
+.card:hover{
+    color: #003566;
+    background: #ffd60a;
+
+    border: 7px solid #ffc300;
+    border-bottom: 7px solid #001d3d;
+    animation: myAnimation 2s;
+}
+
+@keyframes myAnimation{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+    
